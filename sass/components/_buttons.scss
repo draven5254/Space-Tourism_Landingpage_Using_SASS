@@ -1,0 +1,93 @@
+.navbar__close {
+  position: absolute;
+  top: 5rem;
+  right: 3rem;
+  float: right;
+  display: none;
+
+  @include respond(phone) {
+    display: block;
+  }
+}
+
+.navbar__open {
+  position: absolute;
+  top: 5rem;
+  right: 3rem;
+  float: right;
+  display: none;
+
+  @include respond(phone) {
+    display: block;
+  }
+}
+
+.btn-box {
+  @include absCenter;
+
+  background-color: #fff;
+  width: 24.2rem;
+  height: 24.2rem;
+  border-radius: 50%;
+
+  @include respond(phone) {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 40%;
+
+    height: 0;
+    width: 0;
+    border-radius: 50%;
+
+    background: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.1;
+    transition: all 0.5s;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  &:hover::before {
+    width: 40rem;
+    height: 40rem;
+    top: -7.6rem;
+    left: -7.6rem;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+}
+
+.explore-btn {
+  @include absCenter;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  /* identical to box height */
+
+  letter-spacing: 2px;
+
+  color: #0b0d17;
+
+  @include respond(phone) {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.3rem;
+
+    letter-spacing: 1.25px;
+  }
+}

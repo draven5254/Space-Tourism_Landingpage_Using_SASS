@@ -1,0 +1,127 @@
+.home {
+  background-image: url(../assets/home/background-home-desktop.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 2rem;
+  height: 97vh;
+
+  overflow-y: scroll;
+  position: relative;
+
+  padding: 3rem 0 0 3rem;
+
+  @include respond(tab-port) {
+    padding: 0;
+    background-size: cover;
+    background-image: url(../assets/home/background-home-tablet.jpg);
+  }
+
+  @include respond(phone) {
+    padding: 0;
+    border-radius: 0;
+    height: 100vh;
+    background-image: url(../assets/home/background-home-mobile.jpg);
+  }
+}
+
+/* Customize the appearance of the loader */
+
+// .hero-section {
+//   // position: absolute;
+//   // right: 100rem;
+//   // left: 5rem;
+//   //  background-color: red;
+//   margin-top: 5rem;
+//   display: flex;
+
+//   &__right-box {
+//     // background-color: red;
+//     position: relative;
+//     // padding: 10.5rem;
+//     // padding-left: 10.5rem;
+//     width: 50%;
+//     margin-right: 5rem;
+
+//     &__right-dtls {
+//       @include absCenter;
+//     }
+
+//     @include respond(phone) {
+//       width: 100%;
+//       padding: 5rem 10.5rem 0 10.5rem;
+//     }
+//   }
+
+//   &__left-box {
+//     position: relative;
+//     // display: inline-block;
+//     // padding: 5rem;
+//     // width: 50%;
+
+//     position: relative;
+//     height: 25rem;
+//     width: 25rem;
+//     border-radius: 50%;
+
+//     left: 13rem;
+//     top: 15rem;
+
+//     @include respond(phone) {
+//       top: 0;
+//     }
+
+// &::before {
+//   content: "";
+//   position: absolute;
+//   top: 40%;
+//   left: 40%;
+
+//   height: 0;
+//   width: 0;
+//   border-radius: 50%;
+
+//   background: #ffffff;
+//   mix-blend-mode: normal;
+//   opacity: 0.1;
+//   transition: all 0.5s;
+// }
+
+// &:hover::before {
+//   width: 40rem;
+//   height: 40rem;
+//   top: -7.5rem;
+//   left: -7.5rem;
+
+//   @include respond(phone) {
+//     height: 30rem;
+//     width: 30rem;
+//     left: 11rem;
+//     top: 11rem;
+//   }
+// }
+// }
+
+//   &__btn-box {
+//     text-decoration: none;
+
+//     background-color: #fff;
+//     @include absCenter;
+//     height: 25rem;
+//     width: 25rem;
+//     border-radius: 50%;
+
+//     @include respond(phone) {
+//       border-radius: 50%;
+
+//       position: absolute;
+//       left: 21rem;
+//       top: 15rem;
+//     }
+//   }
+
+//   @include respond(phone) {
+//     margin: 0;
+//     display: block;
+//     text-align: center;
+//   }
+// }

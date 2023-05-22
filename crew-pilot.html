@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    k
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="loader"></div>
+    </div>
+
+    <div class="crew">
+      <nav class="navbar">
+        <div class="navbar__logo-box">
+          <img src="./assets/shared/logo.svg" alt="logo" />
+        </div>
+
+        <div class="navbar__container">
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a href="index.html" class="navbar__link font-navbar"
+                ><span class="navbar__span">00</span>Home</a
+              >
+            </li>
+            <li class="navbar__item">
+              <a href="destination-moon.html" class="navbar__link font-navbar"
+                ><span class="navbar__span">01</span>Destination</a
+              >
+            </li>
+            <li class="navbar__item">
+              <a
+                href="crew-commander.html"
+                class="navbar__link font-navbar active"
+                ><span class="navbar__span">02</span>Crew</a
+              >
+            </li>
+            <li class="navbar__item">
+              <a href="technology-vehicle.html" class="navbar__link font-navbar"
+                ><span class="navbar__span">03</span>Technology</a
+              >
+            </li>
+          </ul>
+          <img
+            src="./assets/shared/icon-close.svg"
+            class="navbar__close"
+            alt="close button"
+          />
+        </div>
+        <img
+          src="./assets/shared/icon-hamburger.svg"
+          class="navbar__open"
+          alt="open button"
+        />
+      </nav>
+
+      <div class="grid-container">
+        <div class="item">
+          <div class="pick-your-desti-box">
+            <div class="font-heading-5">
+              <span class="desti-span u-padding-right-small">02</span>Meet your
+              crew
+            </div>
+          </div>
+
+          <div class="crew-profession">
+            <h4 class="job-profession">Pilot</h4>
+          </div>
+          <div class="crew-name">
+            <h5 class="font-heading-3">Victor Glover</h5>
+          </div>
+          <div class="crew-dtls">
+            <p class="font-parag">
+              Pilot on the first operational flight of the SpaceX Crew Dragon to
+              the International Space Station. Glover is a commander in the U.S.
+              Navy where he pilots an F/A-18.He was a crew member of Expedition
+              64, and served as a station systems flight engineer.
+            </p>
+          </div>
+          <div class="dot-navigation">
+            <a href="crew-commander.html" class="dot-navigation__item"></a>
+            <a href="crew-specialist.html" class="dot-navigation__item"></a>
+            <a href="crew-pilot.html" class="dot-navigation__item actives"></a>
+            <a href="crew-engineer.html" class="dot-navigation__item"></a>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="crew-image">
+            <picture>
+              <source
+                srcset="./assets/crew/image-victor-glover.png"
+                type="image/png"
+              />
+              <source
+                srcset="./assets/crew/image-victor-glover.webp"
+                type="image/webp"
+              />
+              <img
+                src="./assets/crew/image-victor-glover.png"
+                alt="Photo of
+              victor-glover"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

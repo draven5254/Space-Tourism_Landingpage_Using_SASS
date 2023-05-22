@@ -1,0 +1,158 @@
+.crew {
+  background-image: url(../assets/crew/background-crew-desktop.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 2rem;
+  height: 97vh;
+  overflow-y: scroll;
+  position: relative;
+
+  padding: 3rem 0 0 3rem;
+
+  @include respond(tab-port) {
+    padding: 0;
+    overflow-x: hidden;
+    background-image: url(../assets/crew/background-crew-tablet.jpg);
+  }
+
+  @include respond(phone) {
+    padding: 0;
+    border-radius: 0;
+    overflow-x: hidden;
+    height: 100vh;
+    background-image: url(../assets/crew/background-crew-mobile.jpg);
+  }
+}
+
+.crew-profession {
+  position: absolute;
+  top: 25rem;
+  left: 10rem;
+
+  @include respond(tab-port) {
+    left: 50%;
+    top: 15rem;
+    transform: translate(-50%, -50%);
+  }
+
+  @include respond(phone) {
+    top: 72rem;
+  }
+}
+
+.crew-name {
+  position: absolute;
+  left: 10rem;
+  top: 30rem;
+  width: 100%;
+
+  @include respond(tab-port) {
+    left: 32%;
+    top: 18rem;
+  }
+
+  @include respond(phone) {
+    top: 75rem;
+    left: 28%;
+  }
+}
+
+.crew-dtls {
+  position: absolute;
+  left: 10rem;
+  top: 40rem;
+  width: 71%;
+
+  @include respond(tab-port) {
+    left: 25rem;
+    width: 48%;
+    top: 25rem;
+    text-align: center;
+  }
+
+  @include respond(phone) {
+    top: 81rem;
+    left: 9rem;
+    width: 65%;
+    padding-bottom: 10rem;
+  }
+}
+
+.crew-image {
+  margin-top: 5rem;
+  position: absolute;
+  top: 5rem;
+
+  @include respond(tab-port) {
+    top: 15rem;
+    right: 10rem;
+  }
+
+  @include respond(phone) {
+    top: -22rem;
+    left: 7rem;
+  }
+}
+
+.crew-image img {
+  object-fit: cover;
+
+  @include respond(phone) {
+    position: absolute;
+    top: 25rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50rem;
+  }
+}
+
+.dot-navigation {
+  /* Center the content */
+  //   align-items: center;
+  //   display: flex;
+  //   justify-content: center;
+  display: inline-block;
+  position: absolute;
+  top: 60rem;
+  left: 10rem;
+
+  @include respond(tab-port) {
+    left: 40rem;
+    top: 40rem;
+  }
+
+  @include respond(phone) {
+    left: 17rem;
+    top: 65rem;
+  }
+}
+
+.dot-navigation__item {
+  /* Rounded border */
+  display: inline-block;
+  border-radius: 9999px;
+  height: 2rem;
+  width: 2rem;
+
+  /* Inactive dot */
+  background-color: $color-gray;
+
+  @include respond(tab-port) {
+    height: 1rem;
+    width: 1rem;
+  }
+
+  /* OPTIONAL: Spacing between dots */
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  &:hover {
+    background-color: $color-gray-light;
+  }
+}
+
+/* Active dot */
+.actives {
+  background-color: $color-white;
+}

@@ -1,0 +1,41 @@
+.u-padding {
+  width: 54rem !important;
+
+  @include respond(phone) {
+    padding: 0 11.5rem !important;
+  }
+}
+
+.u-padding-right-medium {
+  padding-right: 8rem !important;
+}
+
+.u-padding-right-small {
+  padding-right: 2rem !important;
+}
+
+.u-center {
+  @include respond(tab-port) {
+    text-align: center !important;
+  }
+}
+
+.u-margin-top {
+  margin-top: 20rem !important;
+}
+
+.u-margin-bottom {
+  margin-bottom: 2rem !important;
+}
+
+.u-padding-bottom-medium {
+  padding-bottom: 5rem !important;
+}
+
+.u-margin-top-medium {
+  margin-top: 10rem !important;
+
+  @include respond(tab-port) {
+    margin-top: 0;
+  }
+}

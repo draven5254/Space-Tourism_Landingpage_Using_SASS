@@ -1,0 +1,139 @@
+.navbar {
+  height: 9.6rem;
+
+  &__logo-box {
+    display: inline-block;
+
+    padding: 3rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 45rem;
+      top: 8rem;
+      left: 20rem;
+      background: #ffffff;
+      mix-blend-mode: normal;
+      opacity: 0.25;
+      z-index: 1;
+
+      @include respond(tab-port) {
+        display: none;
+      }
+    }
+  }
+
+  &__container {
+    float: right;
+    height: inherit;
+    position: relative;
+    width: 55%;
+
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+
+    @include respond(phone) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      z-index: 1;
+      display: none;
+    }
+
+    &.show {
+      display: block;
+    }
+  }
+
+  &__list {
+    text-decoration: none;
+    position: absolute;
+    top: 4rem;
+    left: 9rem;
+
+    @include respond(phone) {
+      display: block;
+      top: 17rem;
+      left: 4rem;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+
+    &:not(:last-child) {
+      padding-right: 3rem;
+    }
+
+    @include respond(phone) {
+      &:not(:last-child) {
+        padding-bottom: 3rem;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      background: #ffffff;
+      mix-blend-mode: normal;
+      opacity: 0.5;
+      height: 0.3rem;
+      width: 0;
+      left: 0;
+      bottom: -4.2rem;
+      transition: all 0.3s;
+    }
+
+    &:hover:after {
+      width: 100%;
+
+      @include respond(phone) {
+        display: none;
+      }
+    }
+
+    &.active {
+      &:after {
+        opacity: 1;
+        width: 100%;
+
+        @include respond(phone) {
+          opacity: 0;
+        }
+      }
+    }
+
+    @include respond(phone) {
+      display: block;
+    }
+  }
+
+  &__span {
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+
+    padding-right: 1rem;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+
+    @include respond(phone) {
+      display: block;
+      display: inline;
+    }
+  }
+}

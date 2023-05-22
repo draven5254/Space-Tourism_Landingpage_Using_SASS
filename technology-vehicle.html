@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="loader"></div>
+    </div>
+
+    <div class="technology">
+      <nav class="navbar">
+        <div class="navbar__logo-box">
+          <img src="./assets/shared/logo.svg" alt="logo" />
+        </div>
+
+        <div class="navbar__container">
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a href="index.html" class="navbar__link font-navbar"
+                ><span class="navbar__span">00</span>Home</a
+              >
+            </li>
+            <li class="navbar__item">
+              <a href="destination-moon.html" class="navbar__link font-navbar"
+                ><span class="navbar__span">01</span>Destination</a
+              >
+            </li>
+            <li class="navbar__item">
+              <a href="crew-commander.html" class="navbar__link font-navbar"
+                ><span class="navbar__span">02</span>Crew</a
+              >
+            </li>
+            <li class="navbar__item">
+              <a
+                href="technology-vehicle.html"
+                class="navbar__link font-navbar active"
+                ><span class="navbar__span">03</span>Technology</a
+              >
+            </li>
+          </ul>
+          <img
+            src="./assets/shared/icon-close.svg"
+            class="navbar__close"
+            alt="close button"
+          />
+        </div>
+        <img
+          src="./assets/shared/icon-hamburger.svg"
+          class="navbar__open"
+          alt="open button"
+        />
+      </nav>
+
+      <div class="grid-container">
+        <div class="item">
+          <div class="font-heading-5">
+            <span class="desti-span u-padding-right-small">03</span>Space Launch
+            101
+          </div>
+          <div class="pick-your-desti-box">
+            <div class="tech-nav-box u-margin-top-medium">
+              <ul class="tech-nav-box__list">
+                <li class="tech-nav-box__item activ">
+                  <a
+                    href="technology-vehicle.html"
+                    class="tech-nav-box__link activ"
+                    >1</a
+                  >
+                </li>
+                <li class="tech-nav-box__item">
+                  <a href="technology-spaceport.html" class="tech-nav-box__link"
+                    >2</a
+                  >
+                </li>
+                <li class="tech-nav-box__item">
+                  <a href="technology-capsule.html " class="tech-nav-box__link"
+                    >3</a
+                  >
+                </li>
+              </ul>
+
+              <div class="tech-content">
+                <div class="tech-content__nav-tech-box">
+                  <div class="nav-text">The Terminology...</div>
+                </div>
+
+                <div class="tech-content__tech-name">
+                  <h5 class="font-heading-3">launch vechicle</h5>
+                </div>
+
+                <div class="tech-content__tech-dtls">
+                  <p class="font-parag">
+                    A launch vehicle or carrier rocket is a rocket-propelled
+                    vehicle used to carry a payload from Earth's surface to
+                    space, usually to Earth orbit or beyond. Our WEB-X carrier
+                    rocket is the most powerful in operation. Standing 150
+                    metres tall, it's quite an awe-inspiring sight on the launch
+                    pad!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="tech-img-box">
+            <picture>
+              <source
+                srcset="./assets/technology/image-launch-vehicle-landscape.jpg"
+                media="(max-width: 48em)"
+              />
+              <img
+                src="./assets/technology/image-launch-vehicle-portrait.jpg"
+                alt="launch vechicle image"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

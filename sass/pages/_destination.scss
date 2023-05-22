@@ -1,0 +1,131 @@
+.destination {
+  background-image: url(../assets/destination/background-destination-desktop.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 2rem;
+  height: 97vh;
+  overflow-y: scroll;
+  position: relative;
+
+  padding: 3rem 0 0 3rem;
+
+  @include respond(tab-port) {
+    padding: 0;
+    background-image: url(../assets/destination/background-destination-tablet.jpg);
+  }
+
+  @include respond(phone) {
+    padding: 0;
+    border-radius: 0;
+    height: 100vh;
+    background-image: url(../assets/destination/background-destination-mobile.jpg);
+  }
+}
+
+.destination-nav {
+  position: relative;
+  right: 8rem;
+
+  @include respond(tab-port) {
+    top: 25rem;
+    left: 17rem;
+  }
+
+  @include respond(phone) {
+    top: 7rem;
+    left: 2rem;
+  }
+}
+
+.pick-your-desti-box {
+  position: absolute;
+  left: 10rem;
+
+  @include respond(tab-port) {
+    left: 4rem;
+  }
+
+  @include respond(phone) {
+    // left: 10rem;
+    width: 25rem;
+    @include absCenter;
+  }
+}
+
+.desti-image-box {
+  position: absolute;
+  top: 10rem;
+  right: 0;
+
+  @include respond(tab-port) {
+    left: 25rem;
+    top: 15rem;
+  }
+
+  @include respond(phone) {
+    left: 5rem;
+    top: 10rem;
+  }
+}
+
+.desti-image-box img {
+  width: 445px;
+  height: 445px;
+
+  @include respond(tab-port) {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.desti-box-dtls {
+  position: absolute;
+  top: 13rem;
+  width: 54rem;
+
+  @include respond(tab-port) {
+    top: 40rem;
+    left: 16rem;
+    text-align: center;
+  }
+
+  @include respond(phone) {
+    top: 35rem;
+    left: 8rem;
+    width: 30rem;
+  }
+}
+
+.distance-travel-box {
+  position: absolute;
+  display: inline-block;
+  top: 40rem;
+
+  @include respond(tab-port) {
+    top: 70rem;
+    left: 26rem;
+    text-align: center;
+  }
+
+  @include respond(phone) {
+    left: 17rem;
+  }
+}
+
+.distance-travel-box-1 {
+  display: inline-block;
+
+  @include respond(phone) {
+    padding-bottom: 3rem;
+  }
+}
+
+.distance-travel-box-2 {
+  display: inline-block;
+
+  @include respond(phone) {
+    position: absolute;
+    display: block;
+    padding-bottom: 5rem;
+  }
+}

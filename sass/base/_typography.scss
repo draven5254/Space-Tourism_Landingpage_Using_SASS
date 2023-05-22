@@ -1,0 +1,244 @@
+.font-heading-1 {
+  text-transform: uppercase;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15rem;
+  line-height: 17.2rem;
+
+  color: $color-white;
+
+  @include respond(tab-port) {
+    line-height: 15rem;
+  }
+
+  @include respond(phone) {
+    font-size: 8rem;
+  }
+}
+
+.sub-font-heading-1 {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: $color-white;
+}
+
+.font-heading-2 {
+  text-transform: uppercase;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10rem;
+  line-height: 11.5rem;
+
+  color: $color-white;
+
+  @include respond(tab-port) {
+    font-size: 8rem;
+    line-height: 9.2rem;
+
+    text-align: center;
+
+    color: $color-white;
+  }
+
+  @include respond(phone) {
+    font-size: 5.6rem;
+    line-height: 6.4rem;
+
+    text-align: center;
+
+    color: $color-white;
+  }
+}
+
+.sub-font-heading-2 {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  /* identical to box height */
+
+  letter-spacing: 2.3625px;
+  text-transform: uppercase;
+
+  color: $color-light-blue;
+}
+
+.font-heading-3 {
+  text-transform: uppercase;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5.6rem;
+  line-height: 6.4rem;
+  text-transform: uppercase;
+
+  color: $color-white;
+
+  @include respond(tab-port) {
+    font-size: 4rem;
+    line-height: 4.6rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+  }
+}
+
+.font-heading-4 {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 3.7rem;
+
+  text-transform: uppercase;
+
+  color: $color-white;
+}
+
+.font-heading-5 {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+  /* identical to box height */
+
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+
+  color: $color-light-blue;
+
+  @include respond(tab-port) {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: 3.375px;
+  }
+
+  @include respond(phone) {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    letter-spacing: 2.7px;
+  }
+}
+
+.font-parag {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  /* or 178% */
+
+  color: $color-light-blue;
+
+  @include respond(tab-port) {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+  }
+
+  @include respond(phone) {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+.font-navbar {
+  text-transform: uppercase;
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  letter-spacing: 2.7px;
+
+  color: $color-white;
+
+  @include respond(tab-port) {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    letter-spacing: 2.3625px;
+  }
+
+  @include respond(phone) {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    letter-spacing: 2.7px;
+  }
+}
+
+.desti-span {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+  /* identical to box height */
+
+  letter-spacing: 4.725px;
+
+  color: $color-white;
+
+  mix-blend-mode: normal;
+  opacity: 0.25;
+
+  @include respond(tab-port) {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    /* identical to box height */
+
+    letter-spacing: 3.375px;
+
+    color: $color-white;
+  }
+}
+
+.job-profession {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 3.7rem;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: $color-white;
+
+  mix-blend-mode: normal;
+  opacity: 0.5;
+
+  @include respond(tab-port) {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+  }
+
+  @include respond(phone) {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+  }
+}
+
+.nav-text {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+
+  text-transform: none;
+
+  color: #ffffff;
+}

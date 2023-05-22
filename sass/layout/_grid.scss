@@ -1,0 +1,40 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+  grid-gap: 50px; /* Gap between grid items */
+
+  @include respond(tab-port) {
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-gap: 150px;
+  }
+}
+
+.item {
+  padding: 30px;
+  position: relative;
+
+  // background-color: red;
+}
+
+.item-1 {
+  position: relative;
+
+  @include respond(tab-port) {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.item-2 {
+  position: relative;
+
+  @include respond(tab-port) {
+    position: absolute;
+    top: 81%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

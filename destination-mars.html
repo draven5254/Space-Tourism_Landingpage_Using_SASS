@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="loader"></div>
+    </div>
+
+    <div class="destination">
+      <nav class="navbar">
+        <div class="navbar__logo-box">
+          <img src="./assets/shared/logo.svg" alt="logo" />
+        </div>
+
+        <div class="navbar__container">
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a href="index.html" class="navbar__link font-navbar"
+                ><span class="navbar__span">00</span>Home</a
+              >
+            </li>
+            <li class="navbar__item">
+              <a
+                href="destination-moon.html"
+                class="navbar__link font-navbar active"
+                ><span class="navbar__span">01</span>Destination</a
+              >
+            </li>
+            <li class="navbar__item">
+              <a href="crew-commander.html" class="navbar__link font-navbar"
+                ><span class="navbar__span">02</span>Crew</a
+              >
+            </li>
+            <li class="navbar__item">
+              <a href="technology-vehicle.html" class="navbar__link font-navbar"
+                ><span class="navbar__span">03</span>Technology</a
+              >
+            </li>
+          </ul>
+          <img
+            src="./assets/shared/icon-close.svg"
+            class="navbar__close"
+            alt="close button"
+          />
+        </div>
+        <img
+          src="./assets/shared/icon-hamburger.svg"
+          class="navbar__open"
+          alt="open button"
+        />
+      </nav>
+
+      <div class="grid-container">
+        <div class="item">
+          <div class="pick-your-desti-box">
+            <div class="font-heading-5">
+              <span class="desti-span u-padding-right-small">01</span>Pick your
+              destination
+            </div>
+          </div>
+          <div class="desti-image-box">
+            <picture>
+              <source
+                srcset="./assets/destination/image-mars.webp"
+                type="image/webp"
+              />
+              <source
+                srcset="./assets/destination/image-mars.png"
+                type="image/png"
+              />
+              <img src="./assets/destination/image-mars.png" alt="Moon Image" />
+            </picture>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="destination-nav">
+            <ul class="navbar__list">
+              <li class="navbar__item">
+                <a href="destination-moon.html" class="navbar__link font-navbar"
+                  >Moon</a
+                >
+              </li>
+              <li class="navbar__item">
+                <a
+                  href="destination-mars.html"
+                  class="navbar__link font-navbar active"
+                  >Mars</a
+                >
+              </li>
+              <li class="navbar__item">
+                <a
+                  href="destination-europa.html"
+                  class="navbar__link font-navbar"
+                  >Europa</a
+                >
+              </li>
+              <li class="navbar__item">
+                <a
+                  href="destination-titan.html"
+                  class="navbar__link font-navbar"
+                  >Titan</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="desti-box-dtls">
+            <h2 class="font-heading-2">Mars</h2>
+            <p class="font-parag">
+              Don’t forget to pack your hiking boots. You’ll need them to tackle
+              Olympus Mons, the tallest planetary mountain in our solar system.
+              It’s two and a half times the size of Everest!
+            </p>
+          </div>
+
+          <div class="distance-travel-box u-padding-bottom-medium">
+            <div class="distance-travel-box-1 u-padding-right-medium">
+              <div class="sub-font-heading-2 u-margin-bottom">
+                Avg. distance
+              </div>
+              <div class="sub-font-heading-1">225 mil. km</div>
+            </div>
+            <div class="distance-travel-box-2">
+              <div class="sub-font-heading-2 u-margin-bottom">
+                Est. traven time
+              </div>
+              <div class="sub-font-heading-1">9 months</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
